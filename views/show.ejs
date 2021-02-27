@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <h2><%=Pokemon.name%></h2>
+    <img src="<%=Pokemon.img%>" alt="" width="50px" />
+    <h4><a href="/pokemon">Back to Index</a></h4>
+    <div>
+      <div>
+        <div>Type: </div>
+        <div>
+          <ul>
+            <% if(typeof Pokemon.type != "undefined"){
+            Pokemon.type.forEach((type,index)=>{%>
+            <li><%=type%></li>
+            <% })} else{%>
+              No Data Entry
+              <% } %>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>Stats: </div>
+        <div>
+          <ul>
+            <%for (const ele in Pokemon.stats){%>
+            <li><%=ele%>: <%=Pokemon.stats[ele]%></li>
+            <%}%>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

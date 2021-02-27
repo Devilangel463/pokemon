@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <h1>New Pokemon Page</h1>
+    <form action="/pokemon" method="POST">
+      <label for="name">Name:</label></br>
+      <input type="text" name="name" id="name" /></br>
+      <label for="imageURL">Image URL:</label></br>
+      <input type="text" name="imageURL" id="imageURL" /></br>
+
+      <label for="hp">HP:</label></br>
+      <input type="text" name="hp" id="hp" /></br>
+
+      <label for="attack">Attack:</label></br>
+      <input type="text" name="attack" id="attack" /></br>
+
+      <label for="defense">Defense:</label></br>
+      <input type="text" name="defense" id="defense" /></br>
+
+      <input type="submit" value="Create Pokemon" />
+    </form>
+    <a href="/pokemon">Back to Pokedex</a>
+  </body>
+</html>

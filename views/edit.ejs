@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+</head>
+<body>
+  <form action="/pokemon/<%=id%>?_method=PUT" method="POST">
+      <label for="name">Name: </label></br>
+      <input type="text" id="name" name="name" value="<%=Pokemon.name%>"></br>
+      <label for="img">Image URL: </label></br>
+      <input type="url" id="img" name="img" value="<%=Pokemon.img%>"></br>
+      <label for="hp">HP: </label></br>
+      <input type="number" id="hp" name="hp" value="<%=Pokemon.stats.hp%>"></br>
+      <label for="attack">Attack: </label></br>
+      <input type="number" id="attack" name="attack" value="<%=Pokemon.stats.attack%>"></br>
+      <label for="defense">Defense: </label></br>
+      <input type="number" id="defense" name="defense" value="<%=Pokemon.stats.defense%>"></br>
+      <input type="submit" value="save edit">
+  </form>  
+</body>
+</html>
